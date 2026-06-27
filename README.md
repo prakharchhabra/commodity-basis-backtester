@@ -19,7 +19,7 @@ This project tests whether a simple, rules-based roll-yield signal, going long w
 | In-sample Sharpe (2015–2020) | -0.42 | — |
 | Out-of-sample Sharpe (2021–2024) | -0.02 | — |
 
-**The headline finding is drawdown reduction, not return generation.** Risk-adjusted returns stayed negative in both periods — unsurprising, since crude oil ETFs were structurally weak across most of 2015–2024 (sustained contango, the April 2020 negative-price event). What the strategy actually demonstrates is a consistent, non-degrading reduction in maximum drawdown: roughly half the max loss of buy-and-hold, holding up out-of-sample rather than only working in the period it was designed on.
+**The headline finding is drawdown reduction, not return generation.** Risk-adjusted returns stayed negative in both periods, unsurprising, since crude oil ETFs were structurally weak across most of 2015–2024 (sustained contango, the April 2020 negative-price event). What the strategy actually demonstrates is a consistent, non-degrading reduction in maximum drawdown: roughly half the max loss of buy-and-hold, holding up out-of-sample rather than only working in the period it was designed on.
 
 ![Equity Curve](equity_curve.png)
 
@@ -30,13 +30,13 @@ The natural first guess is that 2021–2024 performance was driven entirely by t
 - % of time long in 2022: 60.2%
 - % of time long in 2023: 36.4%
 
-If the result were purely "the strategy got lucky riding 2022's backwardation spike," you'd expect elevated long exposure persisting into 2023 as well. Instead, exposure drops well below 50% in 2023 — the signal is rotating in and out of positions across both years rather than sitting in one persistent regime. This doesn't prove the signal has a robust edge, but it does rule out the simplest "it just got lucky on one macro event" explanation.
+If the result were purely "the strategy got lucky riding 2022's backwardation spike," you'd expect elevated long exposure persisting into 2023 as well. Instead, exposure drops well below 50% in 2023, the signal is rotating in and out of positions across both years rather than sitting in one persistent regime. This doesn't prove the signal has a robust edge, but it does rule out the simplest "it just got lucky on one macro event" explanation.
 
 ## What this project deliberately does *not* claim
 
-- It does not claim positive risk-adjusted returns — the Sharpe ratio stayed negative in both sample periods, and that's reported plainly rather than hidden behind a more flattering headline metric.
+- It does not claim positive risk-adjusted returns, the Sharpe ratio stayed negative in both sample periods, and that's reported plainly rather than hidden behind a more flattering headline metric.
 - It does not tune parameters after seeing results. The 60-day normalization window, 5-day smoothing window, 5% OTM strike, and cost assumptions were fixed before running the out-of-sample test, and were not adjusted afterward to improve the reported numbers.
-- It does not claim the out-of-sample improvement proves a durable edge — the regime check above shows the result is more nuanced than pure backtest luck, but a longer out-of-sample window would be needed to make a stronger claim.
+- It does not claim the out-of-sample improvement proves a durable edge, the regime check above shows the result is more nuanced than pure backtest luck, but a longer out-of-sample window would be needed to make a stronger claim.
 
 ## Methodology detail
 
