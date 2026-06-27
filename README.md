@@ -1,10 +1,10 @@
 # Systematic Commodity Basis Backtester
 
-A systematic roll-yield strategy on crude oil futures, built and validated on real market data — including an honest investigation into *why* the result looks the way it does, not just what the headline number says.
+A systematic roll-yield strategy on crude oil futures, built and validated on real market data, including an honest investigation into *why* the result looks the way it does, not just what the headline number says.
 
 ## Summary
 
-This project tests whether a simple, rules-based roll-yield signal — going long when the futures curve is in backwardation, flat when in contango — can reduce drawdown relative to a passive buy-and-hold position in crude oil, after accounting for transaction costs and a systematic options-based tail-risk hedge.
+This project tests whether a simple, rules-based roll-yield signal, going long when the futures curve is in backwardation, flat when in contango, can reduce drawdown relative to a passive buy-and-hold position in crude oil, after accounting for transaction costs and a systematic options-based tail-risk hedge.
 
 **Data:** USO (front-month crude oil ETF) and USL (12-month average crude oil ETF), 2015–2024, sourced via `yfinance`. The USO/USL ratio is used as a real-market roll-yield proxy.
 
